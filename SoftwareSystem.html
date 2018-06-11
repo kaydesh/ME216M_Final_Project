@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-button w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1" onclick ="window.location.href="index"">Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Product Design <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="MechanicalSystem.html" class="w3-bar-item w3-button">Mechanical System</a>
+            <a href="ElectricalSystem.html" class="w3-bar-item w3-button">Electrical System</a>
+            <a href="SoftwareSystem.html" class="w3-bar-item w3-button">Software System </a>
+          </div>
+    </div>
+    <a href="DesignProcess.html" class="w3-bar-item w3-button w3-hover-white">Design Process</a>
+    <a href="Team.html" class="w3-bar-item w3-button w3-hover-white">Team </a>
+  </div>
+</div>
+<!-- Navbar ends -->
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="TeamPicture.jpg" /alt = "AAA" style="width:100%">
+
+  </div>
+</div>
+<body>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+    <img src="SSD_216.png" / alt="Picture of Team" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+
+      </div>
+</div>
+<h1>
+  <font size="SSD_216.png"><center> State Machine Diagram </center> </font>
+</h1>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+<body>
+<p> A space machine has been made based on how we want the user to interact with the physical device. </p>
+<p> .h individual module files have been made for the display screen, IMU (for signal processing), global variables,
+    IOT (sending data from micro processor to cloud and vice-versa) </p>
+
+    <p> .ino file has been made to implement the final space machine diagram </p>
+
+  <p> All the modules and the .ino code can be downloaded from the git hub repository. Please feel free to use them if you want to build your own cool product.
+    It is a joy to see our designs being replicated by others </p>
+<center>
+  <a href = "https://github.com/anurag0866/ME216_FinalProject"> The GITHUB repository for Space Machine implementation can be found here </a>
+</center>
+<p> The Social Interactions part has been prototyped using a web page version. HTML code has been written pull data from the adafruit cloud.
+  The implementation has been done to ensure that the interface allows the user to experience the social interactions in the manner we wanted. </p>
+<center>
+  <a href = "https://github.com/anurag0866/anurag0866.github.io"> The GITHUB repository for HTML code for social interactions can be found here</a>
+</center>
+</body>
+</div>
+</html>

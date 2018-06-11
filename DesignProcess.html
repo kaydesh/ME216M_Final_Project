@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-button w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1" onclick ="window.location.href="index"">Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Product Design <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="MechanicalSystem.html" class="w3-bar-item w3-button">Mechanical System</a>
+            <a href="ElectricalSystem.html" class="w3-bar-item w3-button">Electrical System</a>
+            <a href="SoftwareSystem.html" class="w3-bar-item w3-button">Software System </a>
+          </div>
+    </div>
+    <a href="DesignProcess.html" class="w3-bar-item w3-button w3-hover-white">Design Process</a>
+    <a href="Team.html" class="w3-bar-item w3-button w3-hover-white">Team </a>
+  </div>
+</div>
+<!-- Navbar ends -->
+
+<body>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+<h1>
+  <font size="4"><center> Design process</center> </font>
+</h1>
+
+<h2> <font size="3"><center> Need Finding</center> </font> </h2>
+<p>
+In total we conducted 7 user interviews. Each user had a different amount of experience regarding their experience with working out:
+going to the gym and exercise in general. Our interviewees names are the following: Alex Samardzich (goes to the gym around 3 times a week),
+Anshuman Kumar (an extreme user who goes to the gym everyday), a girl who did not want to be named (started to go to the gym for a while before
+recently stopping), Chris Perez (a student who works out casually), Nigel Clarke (doesn’t go to the gym, but likes to rock climb and play volleyball),
+Sayantan (never goes to the gym), and Atreyee (never goes to the gym).
+</p>
+<p>
+Interviewing a diverse group of users helped us uncover multiple insights and connect to the user’s situation. During our conversations, a
+few points stood out immediately. Among both causal gym goers, it seems that a social aspect would help them prioritize going to the gym.
+For instance, Alex goes to the gym a few times a week, but would ideally love to work out and stay connected with his high school friends.
+ He also brought up that he loves playing video games and a large part of why he plays is that it gives him the opportunity to hang with friends
+ not geographically close by. Among our extreme user, Anshuman, the social element did not seem to matter much. While a partner would be ideal,
+ Anshuman prefered a physical partner (to help with spotting). From the unnamed girl, we learnt that although individual motivation of losing weight
+ and being in shape exists, having someone to go to gym with eventually broke the barrier and helped her start working out. Once she moved, she stopped going to the gym.
+ Chris shared a similar story; he started working out a couple years because he wanted to get into better shape. He began by going with his roommate at the time who had a
+ lot of experience in lifting weights. Additionally, that gave him confidence to maintain a habit. Nigel, is someone who does not workout but enjoys rock climbing
+ and volleyball. He mentioned he likes such sports because they are more fun but also mentioned the social aspect. Nigel also mentioned
+ that he does not feel comfortable going to the gym alone even if he wanted to specifically because he does not want to hurt himself. Sayantan and
+ Atreyee, users who never went to gym hitherto, believe that even social interactions cannot motivate them to the level that they start working out.
+</p>
+<p>
+  Looking over the interviews we drew a few key initial conclusions. Going to the gym as opposed to playing a sport tends to be less social. This sometimes seems to be a barrier to both entry and cause of people discontinuing. Specifically, we picked up that having a partner show the ropes is critical because it also provides instruction and motivation to an otherwise intimidating task.
+</p>
+<p> This led us to develop our need statement. </p>
+<h2> <font size="3"><center> Need Statement</center> </font> </h2>
+<p>
+  Students need a system/product that uses social factors to keep them engaged/motivated and ensures that they exercise on continual basis because often individual motivation is not sufficient enough.
+</p>
+<h2> <font size="3"><center> Concept Development</center> </font> </h2>
+<p>
+  Based on our findings we decided to have a multifaceted interaction system. Our needfinding also uncovered that for beginners to intermediate lifters, often keep track of workouts was an issue. With that in mind and out needfinding nuggets we broke our system into a few modes.
+</p>
+<p>
+  Primarily there is the device - the Forza workout counter. This hardware devices counts the number of reps the user has done during a session (and also for the entire day), calculates a weighted score and sends it up to the adafruit cloud. The workout counter has 4 main states. There is the default state which welcomes the user, the workout state (during which the counting is done), the pause state, and the stats state (during which the day’s stats are shown).
+</p>
+<p>
+  The counter during the workout state is the main feedback during the workout itself. The user can see in large text as the number of reps changes. Once the workout is done and the information is sent to the cloud, the Forza website comes into play.
+</p>
+<p>
+  The Forza website has a minimal look to prevent clutter. This entire interaction is based on a fantasy league set up. Our needfinding regarding some online gaming led us to believe that internal competition among peers has potential to motivate groups (Strava the running app was a source of inspiration). It has 3 main tabs: home, league table, and your story.
+</p>
+<p>
+  The home page welcomes the user to their league. Our current theme is Harry Potter based and the hope is just to inspire the group.
+</p>
+<p>
+  The League Table is simply a list of user and their ranking based on a weighted score. Based on testing we decided that weekly change would also be a good metric to include (future iterations would include graphs depicting this as well).
+</p>
+<p>
+  Finally, the last tab is personalized for the user. Here the user is given information based on their progress and the site provides tips on how the user can progress up the leaderboard.
+</p>
+<p>
+Once the site is updated, based on the progress of individual users, a text message will be sent to other members in the league indiciating movements in the leaderboard. Note that these messages are always positive. Positive reinforcement is sent when the user makes progress (motivational text). WHen other members make progress, another type of motivation message is sent to the user encouraging them to go to the gym. Examples of these messages are provided below.
+</p>
+<h2> <font size="3"><center> Intervention Snapshot</center> </font> </h2>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="Intervention.png" / alt="BOM" style="width:100%">
+</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-button w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1" onclick ="window.location.href="index"">Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Product Design <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="MechanicalSystem.html" class="w3-bar-item w3-button">Mechanical System</a>
+            <a href="ElectricalSystem.html" class="w3-bar-item w3-button">Electrical System</a>
+            <a href="SoftwareSystem.html" class="w3-bar-item w3-button">Software System </a>
+          </div>
+    </div>
+    <a href="DesignProcess.html" class="w3-bar-item w3-button w3-hover-white">Design Process</a>
+    <a href="Team.html" class="w3-bar-item w3-button w3-hover-white">Team </a>
+  </div>
+</div>
+<!-- Navbar ends -->
+
+<body>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+<h1>
+
+  <font size="4"><center> Electrical System Design </center> </font>
+</h1>
+
+
+<p>
+  The electrical design of our product consisted of a barebone PCB, a 9-DOF sensor, 3 buttons, an OLED screen, a  Li-Ion battery, and the Adafruit ESP8266 Huzzah microcontroller.
+  Since we were trying to design a wearable, our main objective was to get as small as form factor as we could and fit all the components snuggly.
+  This can be especially challenging with a small budget and only off the counter general products.
+   Nevertheless, by placing the OLED screen on top of the microcontroller and bringing in the other parts as close as possible we achieved PCD that was 58x50mm.
+ </p>
+
+ <p>
+
+  Both the OLED and the 9-DOF sensor communicated to the microcontroller via I2C protocol.
+  Thus they were linked to the same pins on the ESP. Each button was connected to a 10k Ohm resistor and a battery connector was also placed to be surface mounted on the PCB.
+  Since, the appropriate EAGLE Board layout was not found for the 9-DOF sensor, mounting vias were placed on the PCB. For the buttons, a similar solution was developed - pads
+  were placed based on the dimensions of the button contacts.
+</p>
+<p>
+Note that the battery was chosen because the microcontroller can take 3.4V - 6V. The current requirements were also taken into account so that the battery would
+provide enough to supply all the components. </p>
+<p>
+  The EAGLE Schematics are provided in the images section. The default I2C SDA and SCL pins (GPIO 4 and 5 respectively) were used for communication.
+  The buttons were linked to GPIO pins 12,14, and 16.
+</p>
+The EAGLE Schematics are broken down so that you can you can see each individual component. The ESP8266 connections, button circuit, 9-DOF connections, battery connections,
+and OLED connections are depicted separately. There is also a large image depicting the entire PCB together.
+</p>
+<center>
+<a href="https://github.com/ME216MWearable/EAGLEFiles"> Electrical EAGLE CAD drawings can be found here. </a> </center>
+</center>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="BOM.png" / alt="BOM" style="width:100%">
+</div>
+<h1>
+  <font size="4"><center> Eagle Schematic Pictures </center> </font>
+</h1>
+<h2> <font size="3"><center> (ESP 8266, 9 - DOF, OLED, Battery, Buttons, PCB)</center> </font></h1>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+    <img src="ESP8266.png" / alt="BOM" style="width:100%">
+  </div>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="9-DOF.png" / alt="BOM" style="width:100%">
+</div>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="OLED.png" / alt="BOM" style="width:100%">
+</div>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="Battery.png" / alt="BOM" style="width:100%">
+</div>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="Buttons.png" / alt="BOM" style="width:100%">
+</div>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="EntirePCB.png" / alt="BOM" style="width:100%">
+</div>
+
+</body>
+</html>

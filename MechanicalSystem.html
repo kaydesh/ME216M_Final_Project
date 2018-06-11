@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-button w3-hide-medium w3-hide-large" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1" onclick ="window.location.href="index"">Home</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More"> Product Design <i class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="MechanicalSystem.html" class="w3-bar-item w3-button">Mechanical System</a>
+            <a href="ElectricalSystem.html" class="w3-bar-item w3-button">Electrical System</a>
+            <a href="SoftwareSystem.html" class="w3-bar-item w3-button">Software System </a>
+          </div>
+    </div>
+    <a href="DesignProcess.html" class="w3-bar-item w3-button w3-hover-white">Design Process</a>
+    <a href="Team.html" class="w3-bar-item w3-button w3-hover-white">Team </a>
+  </div>
+</div>
+<!-- Navbar ends -->
+
+<body>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+<h1>
+
+  <font size="4"><center> Mechanical System Design</center> </font>
+</h1>
+
+<p>
+
+The final product will be an assembly of the following sub systems <br>
+1. Display Screen <br>
+2. Printed Circuit board  <br>
+3. Battery <br>
+4. Buttons <br>
+5. Enclosure <br>
+6. Strap
+</p>
+
+<p>
+Since the objective of the project is to build a prototype, failure analysis considerations have not been done. The product developed may fail due to impact forces, application of unnatural stress by the user.
+</p>
+<p>
+The objective of the mechanical system design is to develop a product that has the following features: <br>
+1. Hold together the sub systems without dislocation when the product is being used <br>
+2. Be as compact as possible <br>
+3. Easy to manufacture faster <br>
+</p>
+
+
+<p>
+CAD Drawings have been made for the sub systems using Solidworks. The back part of enclosure has been manufactured by laser cutting acrylic plate.
+The front part of enclosure, buttons have been manufactured using FormLabs 3D printer. Velcro hook and loop fasteners and foam padding have been used to make the strap.
+The PCB has been manufactured by Bay Area Circuits (who used our Eagle drawings). The final product has been made by assembling the sub assemblies.
+</p>
+
+<center>
+<a href="https://github.com/ME216MWearable/CADFile"> Detailed CAD drawings can be found here. </a> </center>
+<h2> <font size="3"><center> Enclosure CAD Drawings Pictures</center> </font></h1>
+  <div class="w3-content" style="max-width:800px;margin-top:46px">
+    <img src="ForzaFront.png" / alt="BOM" style="width:100%">
+  </div>
+<div class="w3-content" style="max-width:800px;margin-top:46px">
+  <img src="ForzaBack.png" / alt="BOM" style="width:100%">
+</div>
+
+</body>
+</html>
